@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-grow: 1;
+            flex-shrink: 1;
+            width: 38   0px;
+        }
+
+        .container .child {
+            background-color: blue;
+            flex-basis: auto;
+        }
+
+        .container .sep {
+            background-color: black;
+            flex-basis: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child" style="flex-basis: 200px;">
+            Item One
+        </div>
+        <div class="sep"></div>
+        <div class="child">
+            Item Two
+        </div>
+        <div class="sep"></div>
+        <div class="child">
+            Item Three
+        </div>
+    </div>
+</body>
+</html>

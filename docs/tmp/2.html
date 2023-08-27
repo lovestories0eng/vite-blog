@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="progress"></div>
+</body>
+<script>
+    let progress = document.getElementById('progress')
+    let i = 0;
+  
+    function count() {
+  
+      // 做繁重的任务的一部分 (*)
+      do {
+        i++;
+        // 事件去重？
+        progress.innerHTML = i;
+        console.log(i)
+      } while (i % 1e3 != 0);
+  
+      if (i < 1e7) {
+        setTimeout(count);
+      }
+  
+    }
+  
+    count();
+  </script>
+</html>

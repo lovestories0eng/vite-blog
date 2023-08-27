@@ -1,0 +1,11 @@
+{
+  "files.associations": {
+    "*.vue": "vue"
+  },
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "editor.fontFamily": "FiraCode-Medium",
+  "editor.indentSize": 2,
+  // "vetur.useWorkspaceDependencies": true
+  // "liveServer.settings.root": "/docs/.vitepress/dist"
+  "liveServer.settings.root": "/docs/javaScript/vue"
+}

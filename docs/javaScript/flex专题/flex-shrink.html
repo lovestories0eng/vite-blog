@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-grow: 1;
+            width: 360px;
+        }
+
+        .container .child {
+            background-color: blue;
+        }
+
+        .container .sep {
+            background-color: black;
+            flex-basis: 20px;
+            flex-shrink: 0;
+        }
+
+        #one {
+            flex-basis: 100px;
+            flex-shrink: 0;
+        }
+
+        #two {
+            flex-basis: 100px;
+            flex-shrink: 1;
+        }
+
+        #three {
+            flex-basis: 300px;
+            flex-shrink: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child" id="one">
+            Item One
+        </div>
+        <div class="sep"></div>
+        <div class="child" id="two">
+            Item Two
+        </div>
+        <div class="sep"></div>
+        <div class="child" id="three">
+            Item Three
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "docs:dev": "vitepress dev docs --config tsconfig.json",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "element-plus": "^2.3.1",
+    "fast-glob": "^3.2.12",
+    "gray-matter": "^4.0.3",
+    "ramda": "^0.29.0",
+    "sass": "^1.60.0",
+    "typescript": "^5.0.2",
+    "vue-command-palette": "^0.1.4",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.10",
+    "@types/ramda": "^0.28.24",
+    "vite-plugin-svg-icons": "^2.0.1"
+  }
+}
